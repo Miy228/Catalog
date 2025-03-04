@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Розклад | Конференція 2025</title>
+    <title>Розклад конференції</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,32 +11,48 @@
         <nav>
             <ul>
                 <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html" class="active">Про нас</a></li>
                 <li><a href="schedule.html">Розклад</a></li>
                 <li><a href="speakers.html">Спікери</a></li>
-                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
                 <li><a href="register.html">Реєстрація</a></li>
+                <li><a href="login.html">Вхід</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+
+    <section class="schedule">
         <h2>Розклад конференції</h2>
         <table>
-            <tr>
-                <th>Час</th>
-                <th>Подія</th>
-                <th>Спікер</th>
-            </tr>
-            <tr>
-                <td>10:00</td>
-                <td>Відкриття</td>
-                <td>Олександр Іванов</td>
-            </tr>
-            <tr>
-                <td>12:00</td>
-                <td>Інновації у технологіях</td>
-                <td>Марія Петренко</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Час</th>
+                    <th>Тема</th>
+                    <th>Спікер</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10:00 - 11:00</td>
+                    <td>Майбутнє технологій</td>
+                    <td><img src="ing/speaker1.jpg" alt="Спікер 1"> Олександр Іванов</td>
+                </tr>
+                <tr>
+                    <td>11:30 - 12:30</td>
+                    <td>Штучний інтелект у бізнесі</td>
+                    <td><img src="ing/speaker2.jpg" alt="Спікер 2"> Марія Петрова</td>
+                </tr>
+                <tr>
+                    <td>13:00 - 14:00</td>
+                    <td>Кібербезпека у 2025</td>
+                    <td><img src="ing/speaker3.jpg" alt="Спікер 3"> Дмитро Коваленко</td>
+                </tr>
+            </tbody>
         </table>
-    </main>
-   </body>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Конференція 2025. Усі права захищені.</p>
+    </footer>
+</body>
 </html>
