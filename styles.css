@@ -1,115 +1,256 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: url('ing/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    text-align: center;
-    color: white;
     margin: 0;
     padding: 0;
-}
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 15px 0;
-    z-index: 1000;
+    background-color: #f4f4f4;
+    background-image: url('ing/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
     padding: 0;
+    display: flex;
+    background: #333;
+    justify-content: center;
     margin: 0;
 }
+
 nav ul li {
     margin: 0 15px;
 }
+
 nav ul li a {
-    text-decoration: none;
     color: white;
-    font-size: 18px;
-    transition: color 0.3s ease-in-out;
-}
-nav ul li a:hover {
-    color: #ffcc00;
-}
-.schedule {
-    padding: 50px;
-    background: rgba(0, 0, 0, 0.7);
-    margin-top: 100px;
-}
-
-table {
-    width: 80%;
-    margin: 0 auto;
-    border-collapse: collapse;
-}
-th, td {
-    border: 1px solid white;
-    padding: 15px;
-}
-th {
-    background: #ffcc00;
-    color: black;
-}
-
-td img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
 }
 
 .hero {
+    text-align: center;
     padding: 50px;
-    background: rgba(0, 0, 0, 0.7);
-    margin-top: 100px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.hero h2 {
-    font-size: 2rem;
+.content {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #333;
+    font-size: 2em;
+}
+
+#sort-section form {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
 }
-.benefit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 30px;
-}
-.benefit img {
-    width: 900px; 
-    height: 500px;
-    border-radius: 20px; 
-    object-fit: cover; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
-}
-.speakers-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-}
-.speaker {
-    display: flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    margin: 15px 0;
-    border-radius: 15px;
-    width: 80%;
-    max-width: 600px;
-    text-align: left;
-}
-.speaker-img {
-    width: 120px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-right: 15px;
-}
-.speaker-info h3 {
-    margin: 0;
 
+#sort-section label {
+    margin-bottom: 5px;
+}
+
+#sort-section select, #sort-section button {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+}
+
+.product-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-item h3 {
+    margin: 10px 0;
+}
+
+.product-item p {
+    color: #555;
+}
+
+.product-item strong {
+    color: #333;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 8px;
+}
+
+form input,
+form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.product-item img {
+    transition: all 0.3s ease;
+}
+
+.product-item img:hover {
+    border: 5px solid blue;
+    box-shadow: 0 0 10px blue;
+}
+.product-item {
+    position: relative;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    text-align: center;
+}
+
+.product-item .full-description {
+    display: none; 
+    margin-top: 10px;
+}
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item .toggle-description {
+    background-color: #008CBA;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.product-item {
+    position: relative;
+    margin: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.short-description {
+    font-size: 14px;
+    color: #555;
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.full-description {
+    display: none;
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .toggle-description + .full-description {
+    display: block;
+}
+.toggle-description {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+}
+input[type="checkbox"]:checked + .toggle-description {
+    background-color: #0056b3;
 }

@@ -3,50 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Конференція 2025</title>
+    <title>Онлайн Каталог Товарів</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="about.html" class="active">Про нас</a></li>
-                <li><a href="schedule.html">Розклад</a></li>
-                <li><a href="speakers.html">Спікери</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
-                <li><a href="register.html">Реєстрація</a></li>
-                <li><a href="login.html">Вхід</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="services.html">Послуги</a></li>
+            <li><a href="portfolio.html">Портфоліо</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
 
-    <section class="hero">
-        <h1>Ласкаво просимо на Конференцію 2025!</h1>
-        <p>Дізнайтеся більше про подію, розклад та спікерів.</p>
-        <a href="schedule.html" class="btn">Переглянути розклад</a>
-    </section>
+    <div class="hero">
+        <h1>Ласкаво просимо до нашого онлайн каталогу товарів</h1>
+        <p>Ознайомтесь з нашими товарами та знайдіть те, що вам потрібно.</p>
+    </div>
 
-    <section class="about">
-        <h2>Чому варто відвідати нашу конференцію?</h2>
-        <div class="benefits">
-            <div class="benefit">
-                <img src="ing/networking.jpg" alt="Networking">
-                <h3>Нетворкінг</h3>
-                <p>Знайомства з експертами та колегами у вашій сфері.</p>
-            </div>
-            <div class="benefit">
-                <img src="ing/knowledge.jpg" alt="Knowledge">
-                <h3>Знання</h3>
-                <p>Отримайте унікальні знання від провідних спікерів.</p>
-            </div>
-            <div class="benefit">
-                <img src="ing/experience.jpg" alt="Experience">
-                <h3>Досвід</h3>
-                <p>Практичні поради та реальні кейси для вашого розвитку.</p>
-            </div>
+    <div class="content-wrapper">
+        <div class="content">
+            <section id="sort-section">
+                <h2>Сортувати товари</h2>
+                <form id="sort-form">
+                    <label for="sort">Сортувати за:</label>
+                    <select id="sort" name="sort">
+                        <option value="price-asc">Ціна (за зростанням)</option>
+                        <option value="price-desc">Ціна (за спаданням)</option>
+                    </select>
+                    <button type="submit">Застосувати</button>
+                </form>
+            </section>
+
+            <section id="products">
+                <h2>Наші товари</h2>
+                <div class="product-grid">
+                    <div class="product-item">
+                        <img src="ing/product1.jpg" alt="Товар 1">
+                        <h3>Телефон</h3>
+                        <p class="short-description">Чудовий пристрій для зв'язку!</p>
+                        <input type="checkbox" id="product1">
+                        <label for="product1" class="toggle-description">Детальніше</label>
+                        <div class="full-description">
+                            <p></p>
+                        </div>
+                        <p><strong>Ціна:</strong> 500 грн</p>
+                    </div>
+
+                    <div class="product-item">
+                        <img src="ing/product2.jpg" alt="Товар 2">
+                        <h3>Блендер Tefal</h3>
+                        <p class="short-description">Блендер показав себе надійним та ефективним. Потужності вистачає не тільки для швидкого подрібнення продуктів, а й для коління льоду.</p>
+                        <input type="checkbox" id="product2">
+                        <label for="product2" class="toggle-description">Детальніше</label>
+                        <div class="full-description">
+                            <p>Блендер показав себе надійним та ефективним. Потужності вистачає не тільки для швидкого подрібнення продуктів, а й для коління льоду. Чаша зі скла виглядає міцною, не дряпається, витримує високі температури – можна подрібнювати, наприклад, свіжоварене м'ясо. Імпульсний режим та насадка для колки льоду – відмінні доповнення. Трохи вібрує на імпульсному режимі, але це несуттєвий недолік.</p>
+                        </div>
+                        <p><strong>Ціна:</strong> 3899 грн</p>
+                    </div>
+
+                    <div class="product-item">
+                        <img src="ing/product3.jpg" alt="Товар 3">
+                        <h3>Блендер Tefal</h3>
+                        <p class="short-description">Кухонні помічники - це можливість швидше та якісніше зробити улюблений рецептик. От як оцей блендер від тефаль...</p>
+                        <input type="checkbox" id="product3">
+                        <label for="product3" class="toggle-description">Детальніше</label>
+                        <div class="full-description">
+                            <p>Кухонні помічники - це можливість швидше та якісніше зробити улюблений рецептик. От як оцей блендер від тефаль , подрібнити , взбити це легко і якісно. Рекомендую у кого ще немає!</p>
+                        </div>
+                        <p><strong>Ціна:</strong> 1899 грн</p>
+                    </div>
+
+                    <div class="product-item">
+                        <img src="ing/product4.jpg" alt="Товар 4">
+                        <h3>Пилосос багатофункціональний Sokany</h3>
+                        <p class="short-description">Пилосос багатофункціональний Sokany це високоефективний побутовий пристрій з потужністю 3600 Вт...</p>
+                        <input type="checkbox" id="product4">
+                        <label for="product4" class="toggle-description">Детальніше</label>
+                        <div class="full-description">
+                            <p>Пилосос багатофункціональний Sokany це високоефективний побутовий пристрій з потужністю 3600 Вт. Завдяки великій місткості пилозбірника на 3,5 літра і циклону фільтрації, цей пилосос забезпечує потужне всмоктування та глибоке очищення. Ідеальний для будь-якого типу поверхонь, від килимів до твердих підлог. Довжина шнура 5 метрів забезпечує свободу пересування, а телескопічна ручка дозволяє регулювати довжину для комфортного прибирання у важкодоступних місцях. М'які колеса гарантують легке та плавне пересування пилососа по будь-яких поверхнях, що робить прибирання комфортним і швидким.</p>
+                        </div>
+                        <p><strong>Ціна:</strong> 4900 грн</p>
+                    </div>
+                    
+                    <div class="product-item">
+                        <img src="ing/product5.jpg" alt="Товар 5">
+                        <h3>Автомобільний пилосос з компресором KS VCP30</h3>
+                        <p class="short-description">Німецька ТМ Könner & Söhnen представляє вашій увазі автомобільний пилосос з компресором...</p>
+                        <input type="checkbox" id="product5">
+                        <label for="product5" class="toggle-description">Детальніше</label>
+                        <div class="full-description">
+                            <p> Німецька ТМ Könner & Söhnen представляє вашій увазі автомобільний пилосос з компресором KS VCP30, що може також виконувати функцію манометру та ліхтаря. Автопилосос працює від розʼєму прикурювача, а це означає, що потужність всмоктування в процесі прибирання залишається постійною і буде достатньо часу на ретельне прибирання салону авто. Пилосос має кабель 3,5 м – цієї довжини вистачить навіть для прибирання багажнику.
+                                Пилосос KS VCP30 потужністю 80 Вт швидко і ефективно всмоктує крихти, пил, пісок, шерсть домашніх улюбленців, що особливо актуально під час линьки. НЕРА-фільтр можна швидко очищати у проточній воді та використовувати знову, забезпечуючи довгий термін служби. Значна економія коштів досягається у довгостроковій перспективі завдяки прозорому контейнеру для сміття, який легко мити під водою. Не потрібно постійно купувати змінні фільтри-мішки.
+                            </p>
+                        </div>
+                        <p><strong>Ціна:</strong> 1999 грн</p>
+                    </div>
+                    
+                    <div class="product-item">
+                        <img src="ing/product6.jpg" alt="Товар 6">
+                        <h3>Кавомолка BOSCH TSM6A013B</h3>
+                        <p class="short-description"> Чудова кавомолка коли...</p>
+                        <input type="checkbox" id="product6">
+                        <label for="product6" class="toggle-description">Детальніше</label>
+                        <div class="full-description">
+                            <p>Чудова кавомолка коли дійсно хочеться свіжої та натуральної кави! </p>
+                        </div>
+                        <p><strong>Ціна:</strong> 1999 грн</p>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
-
+    </div>
 </body>
 </html>

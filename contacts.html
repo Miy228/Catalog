@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Про нас</title>
+    <title>Контакти</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,9 +19,16 @@
 
     <div class="content-wrapper">
         <div class="content">
-            <h2>Про нашу компанію</h2>
-            <p>Ми займаємось продажем якісних товарів для дому та бізнесу. Наша мета — надавати клієнтам лише найкраще!</p>
-            <p>Засновані у 2025 році, ми надаємо продукцію найвищої якості та гарантуємо задоволення від покупок. Також цей сайт розроблений студенткою ПІ-222 Гуменюк Софією:D</p>
+            <h2>Зворотний зв'язок</h2>
+            <form action="#">
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Ваш Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Ваше повідомлення:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Відправити</button>
+            </form>
         </div>
     </div>
 
